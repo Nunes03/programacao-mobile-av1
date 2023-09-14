@@ -1,6 +1,7 @@
 package com.github.nunes03.av1
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -78,6 +79,8 @@ class Tela2 : AppCompatActivity() {
     }
 
     private fun cancelar() {
+        Log.d("tela2", "Cancelando ação")
+
         intent.apply {
             putExtra("valido", false)
         }
